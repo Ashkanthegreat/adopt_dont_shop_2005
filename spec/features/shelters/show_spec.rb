@@ -21,10 +21,3 @@ RSpec.describe "Shelters Show Page" do
   end
 
 end
-
-# Then I see the shelter with that id including the shelter's:
-# - name
-# - address
-# - city
-# - state
-# - zip
