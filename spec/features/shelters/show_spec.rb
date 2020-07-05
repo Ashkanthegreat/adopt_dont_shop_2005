@@ -40,6 +40,21 @@ RSpec.describe "Shelters Show Page" do
     expect(page).to have_content("1600 Puppy Blvd")
     expect(page).to have_content("Littleton")
     expect(page).to have_content("80235")
+    expect(page).to_not have_content("1808 Pup lane")
+
+  end
+
+  it "can see a link to delete a shelter" do
+
+    visit "shelters/#{@shelter1.id}"
+
+    click_on "Delete Shelter"
+
+    expect(current_path).to eq("/shelters")
+
+    expect(page).to have_content(@shelter2.name)
+    expect(page).to_not have_content(@shelter1.name)
+
   end
 
 end
