@@ -215,6 +215,7 @@
           1,
           1,
           1,
+          1,
           null,
           1,
           null
@@ -275,6 +276,44 @@
           null,
           1,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/huxley/2module/projects/adopt_dont_shop_2005/spec/features/shelters/pets_index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -477,6 +516,11 @@
           null,
           null,
           1,
+          1,
+          1,
+          null,
+          null,
+          1,
           null,
           1,
           2,
@@ -486,6 +530,6 @@
         ]
       }
     },
-    "timestamp": 1593990948
+    "timestamp": 1593991967
   }
 }
