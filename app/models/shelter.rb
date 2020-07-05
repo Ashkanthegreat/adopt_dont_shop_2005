@@ -4,4 +4,6 @@ class Shelter < ApplicationRecord
                         :city,
                         :state,
                         :zip
+
+  has_many :pets
 end
