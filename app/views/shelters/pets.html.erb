@@ -6,7 +6,8 @@
   <p><%= pet.approximate_age%></p>
   <p><%= pet.sex %></p>
   <p><%= pet.description %></p>
-  <p><%= pet.shelter.name %></p>
+  <p><%= link_to pet.shelter.name, "/shelters/#{pet.shelter.id}" %></p>
+
 <% end %>
 
 <%= link_to "Create Pet", "/shelters/#{@shelter.id}/pets/new"  %>
