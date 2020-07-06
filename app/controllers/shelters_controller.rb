@@ -30,8 +30,8 @@ class SheltersController < ApplicationController
   end
 
   def pets
-    shelter = Shelter.find(params[:id])
-    @pets = shelter.pets.all
+    @shelter = Shelter.find(params[:id])
+    @pets = @shelter.pets.all
   end
 
   private
