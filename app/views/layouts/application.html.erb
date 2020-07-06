@@ -9,6 +9,22 @@
   </head>
 
   <body>
+    <header class='clearfix'>
+      <div class="left-nav">
+        <ul>
+          <li><%= link_to "Shelters", "/shelters"  %></li>
+        </ul>
+      </div>
+      <div class="right-nav">
+        <ul>
+          <li><%= link_to "Pets", "/pets"  %></li>
+        </ul>
+      </div>
+      <div>
+      <%= image_tag("https://www.magnusemlen.se/mobile/photography/winter/images/Panorama_2098.jpg", id: "headerPic", height: 200, width: "100%" ) %>
+    </div>
+
+    </header>
     <%= yield %>
   </body>
 </html>
