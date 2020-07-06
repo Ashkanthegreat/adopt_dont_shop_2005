@@ -71,4 +71,31 @@ RSpec.describe "pets index page" do
     expect(page).to_not have_content("Huxley")
   end
 
+  it "can delete a pet from index page" do
+    shelter1 = Shelter.create!(name: "Pups For You",
+                                address: "1808 Pup lane",
+                                city: "Denver",
+                                state: "Colorado",
+                                zip: "80027")
+
+
+    pet_1 = Pet.create(  image: "https://i.imgur.com/uQ7WVLL.jpg",
+                          name:  "Huxley",
+                          description: "Sweet senior dog",
+                          approximate_age: "18",
+                          sex: "Male",
+                          status: "adoptable",
+                          shelter_id: shelter1.id)
+
+
+    visit "/pets"
+
+    click_on "Delete Pet"
+
+    expect(current_path).to eq("/pets")
+
+    expect(page).to_not have_content(pet_1.name)
+
+  end
+
 end
