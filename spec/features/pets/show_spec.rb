@@ -40,6 +40,18 @@ RSpec.describe "Pets Show Page" do
 
     expect(page).to_not have_content(@pet_2.name)
 
+  end
+
+  it "can delete a pet" do
+
+    visit "/pets/#{@pet_1.id}"
+
+    click_on "Delete Pet"
+
+    expect(current_path).to eq("/pets")
+
+    expect(page).to have_content(@pet_2.name)
+    expect(page).to_not have_content(@pet_1.name)
 
   end
 
